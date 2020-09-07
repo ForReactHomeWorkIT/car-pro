@@ -5,7 +5,10 @@ import '../App.css';
 export default class Footer extends Component {
     render() {
         return (
-            <h4>Car-pro</h4>
+            <div id="footer">
+                <h4>Car-pro</h4>
+            </div>
+
         )
     }
 }

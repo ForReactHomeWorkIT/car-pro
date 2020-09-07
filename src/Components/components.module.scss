@@ -1,0 +1,12 @@
+.wrap_nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
+  background-color: var(--prime-color);
+  padding: 2em;
+  &__item {
+    color: var(--font-color);
+  }
+}

@@ -1,10 +1,15 @@
-<?xml version="1.0" standalone="no"?>
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="150.000000pt" height="75.000000pt" viewBox="0 0 1280.000000 838.000000"
- preserveAspectRatio="xMidYMid meet">
-<g transform="translate(0.000000,838.000000) scale(0.100000,-0.100000)"
-fill="#DCDCDC" stroke="none">
-<path d="M4393 8343 l-68 -37 -230 -1 c-783 -7 -1010 -15 -1330 -50 -170 -19
+import React, {Component} from "react";
+
+export default class Logo extends Component {
+    render() {
+        return (
+            <div>
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="100px" height="50px" viewBox="0 0 1280.000000 838.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,838.000000) scale(0.100000,-0.100000)"
+                       fill="#000000" stroke="none">
+                        <path d="M4393 8343 l-68 -37 -230 -1 c-783 -7 -1010 -15 -1330 -50 -170 -19
 -355 -37 -410 -40 -315 -19 -482 -55 -736 -160 -361 -149 -626 -374 -852 -720
 -90 -139 -195 -280 -209 -280 -18 0 -62 -81 -160 -288 l-88 -187 0 -288 0
 -288 -58 -68 c-31 -38 -66 -83 -78 -100 -19 -29 -87 -194 -113 -277 -6 -20
@@ -43,5 +48,9 @@ l81 71 44 -10 c24 -6 136 -26 249 -45 675 -113 1093 -124 1640 -44 608 90
 -1006 -292 -1011 -288 -2 3 69 26 158 52 347 102 1168 348 1268 380 106 34
 128 40 118 31z m-1573 -475 c-11 -5 -27 -9 -35 -9 -9 0 -8 4 5 9 11 5 27 9 35
 9 9 0 8 -4 -5 -9z"/>
-</g>
-</svg>
+                    </g>
+                </svg>
+            </div>
+        )
+    }
+}

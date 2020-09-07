@@ -1,3 +1,45 @@
-h1 {
-  color: navy;
+:root {
+    --prime-color: #6f828a;
+    --second-color: #1E90FF;
+    --font-color: #F0F8FF;
+}
+
+.App {
+    box-sizing: border-box;
+    padding: 20px 10%;
+    display: grid;
+    grid-template-areas:  'header'
+                          'main'
+                          'footer';
+    grid-template-rows: 10vh auto 15vh;
+    grid-gap: 2em;
+    position: absolute;
+    z-index: 9999;
+}
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
 }
