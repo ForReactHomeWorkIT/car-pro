@@ -1,12 +1,13 @@
 .wrap_nav {
+  background-color: var(--prime-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3em;
-  background-color: var(--prime-color);
+  gap: 2em;
   padding: 2em;
   &__item {
-    color: var(--font-color);
+    color: var(--head-color);
+    font: 16pt Arial Black;
   }
 }

@@ -5,9 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("./assets/car_bg.png");
-  background-size: 10%;
-
+  /*background: url("./assets/car_bg.png");*/
+  /*background-size: 10%;*/
+  background-image: url("./assets/main_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

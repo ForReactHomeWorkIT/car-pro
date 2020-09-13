@@ -1,7 +1,11 @@
 :root {
+    /*COLORS*/
     --prime-color: #6f828a;
     --second-color: #1E90FF;
-    --font-color: #F0F8FF;
+    --head-color: #F0F9F0;
+    --dark: #000;
+    /*FONT*/
+
 }
 
 .App {
@@ -11,22 +15,26 @@
     grid-template-areas:  'header'
                           'main'
                           'footer';
-    grid-template-rows: 10vh auto 15vh;
+    grid-template-rows: auto;
     grid-gap: 2em;
     position: absolute;
-    z-index: 9999;
+    width: 100%;
 }
 
 #header {
     grid-area: header;
+    height: 10vh;
 }
 
 #main {
     grid-area: main;
+    min-height: 75vh;
 }
 
 #footer {
     grid-area: footer;
+    height: 15vh;
+    background-color: var(--prime-color);
 }
 
 *, *:after, *:before {
