@@ -42,7 +42,9 @@
     margin: 0;
     padding: 0;
 }
-
+h1 {
+    color: var(--second-color);
+}
 ul {
     list-style-type: none;
 }
