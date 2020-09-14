@@ -8,7 +8,7 @@ export default class Logo extends Component {
                      width="100px" height="50px" viewBox="0 0 1280.000000 838.000000"
                      preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,838.000000) scale(0.100000,-0.100000)"
-                       fill="#000000" stroke="none">
+                       fill="#FF0" stroke="none">
                         <path d="M4393 8343 l-68 -37 -230 -1 c-783 -7 -1010 -15 -1330 -50 -170 -19
 -355 -37 -410 -40 -315 -19 -482 -55 -736 -160 -361 -149 -626 -374 -852 -720
 -90 -139 -195 -280 -209 -280 -18 0 -62 -81 -160 -288 l-88 -187 0 -288 0
