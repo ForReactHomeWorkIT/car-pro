@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-const OnButton = props => {
+const Sound = props => {
         return (
             <div>
                 <button onClick={props.onClick} className="sound">
@@ -10,4 +10,4 @@ const OnButton = props => {
         );
 }
 
-export default OnButton;
+export default Sound;

@@ -3,13 +3,15 @@ import '../App.css';
 import components from './components.module.css';
 import Logo from "./logo";
 
-export default class Header extends Component {
-    render() {
+const Header = props => {
         return (
             <div id="header" className={components.header}>
-                <Logo />
-                <h1>Car-pro</h1>
+                <div className={components.header__logo}>
+                    <Logo />
+                    <h1>Car-pro</h1>
+                </div>
             </div>
         )
-    }
 }
+
+export default Header;
