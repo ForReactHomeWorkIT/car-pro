@@ -1,0 +1,30 @@
+.news-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.news-wrap{
+    width: 30%;
+    height: 100%;
+    border: 4px dashed whitesmoke;
+    background-color: black;
+    margin-top: 20px;
+}
+.news-wrap p {
+    color: white;
+    padding: 5px 12px 12px 12px;
+}
+.news-wrap h3 {
+    background-color: black;
+    color: orangered;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 25px;
+}
+.news-wrap img {
+    border: 4px solid grey;
+    border-radius: 12px 12px;
+    width: 100%;
+    height: 220px;
+}
