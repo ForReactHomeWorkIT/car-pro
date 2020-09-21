@@ -27,7 +27,7 @@ export default function Main() {
         trail: 25
     })
     return (
-        <div {...bind} class="list" style={{ height: Math.max(...heights) }}>
+        <div {...bind} className="list" style={{ height: Math.max(...heights) }}>
             {transitions.map(({ item, props: { xy, ...rest }, key }) => (
                 <a.div key={key} style={{ transform: xy.interpolate((x, y) => `translate3d(${x}px,${y}px,0)`), ...rest }}>
                     <div style={{ backgroundImage: item.css }} />
