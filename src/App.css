@@ -53,3 +53,23 @@ a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.sound {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.sound svg {
+    fill:#fff;
+    transform: scale(2);
+}
+.sound svg:hover {
+    fill: #ff073a;
+}
+.sound:active {
+    transform: scale(1.05);
+}
