@@ -58,15 +58,5 @@ export default [
         css:
             'url(https://s5o.ru/storage/simple/ru/edt/e4/41/40/b3/rue4326148e2d.jpg)',
         height: 300
-    },
-    {
-        css:
-            'url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUK9F6VLS6Cfg88-P1YkETsSBfsDW4_K89Rw&usqp=CAU)',
-        height: 300
-    },
-    {
-        css:
-            'url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7h7OdUv6CuVvWxf1HQeuAjZbS2n8VTSuwKA&usqp=CAU)',
-        height: 300
     }
 ]
