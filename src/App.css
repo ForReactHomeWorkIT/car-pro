@@ -74,7 +74,7 @@ a {
     transform: scale(2);
 }
 .sound svg:hover {
-    fill: #ff073a;
+    filter: brightness(80%);
 }
 .sound:active {
     transform: scale(1.05);

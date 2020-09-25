@@ -1,12 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './News.css';
 import image1 from '../../assets/porsche.jpg';
 import image2 from '../../assets/Toyota C-HR.jpg';
 import image3 from '../../assets/audi.jpg';
 
-export default class News extends Component {
-
-    render() {
+const News = props => {
         return (
             <div id="news-block" className="news-container">
                 <div id="news-box1" className="news-wrap">
@@ -32,5 +30,6 @@ export default class News extends Component {
                 </div>
             </div>
         );
-    }
 }
+
+export default News;

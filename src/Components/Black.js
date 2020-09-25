@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './components.module.css';
 import Sound from "./Sound";
 import Mute from "./Mute";

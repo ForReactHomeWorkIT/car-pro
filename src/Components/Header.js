@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../App.css';
 import components from './components.module.css';
 import Logo from "./logo";
