@@ -1,22 +1,26 @@
 .wrap_nav {
-  background-color: var(--prime-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2em;
   padding: 2em;
+
   &__item {
-    color: var(--head-color);
-    font: 16pt Arial Black;
+    color:#fff;
+    font-size: 24px;
+    font-family:Tahoma, Geneva, sans-serif;
   }
 }
+
 .header {
   margin-bottom: 30px;
+
   &__logo {
     display: flex;
   }
 }
+
 .black {
   position: absolute;
   top: 0;

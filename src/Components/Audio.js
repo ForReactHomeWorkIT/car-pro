@@ -1,14 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import song from "../assets/audio_bg.mp3";
 
-class Audio extends Component {
-    render() {
+const Audio = () => {
         return (
             <div>
-                <audio loop id="music"><source src={song}/></audio>
+                <audio src={song} loop id="music" />
             </div>
         );
-    }
 }
 
 export default Audio;

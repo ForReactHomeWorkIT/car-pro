@@ -2,15 +2,15 @@ import React from 'react'
 import './Main.css'
 
 const styles = {
-    h2: {
-        color: '#fff'
+    img: {
+        marginLeft: "30%"
     }
 }
 
 export default function Main() {
 return (
     <div>
-        <h2 style={styles.h2}>MAIN</h2>
+        <img style={styles.img} width={500} src="https://carhoots.com/wp-content/uploads//2019/07/66646816_492039374938472_3464683549005804454_n.jpg" alt="image"/>
     </div>
 )
 }

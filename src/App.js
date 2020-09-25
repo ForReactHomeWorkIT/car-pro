@@ -24,7 +24,7 @@ export default class App extends Component {
     render() {
         const audio = this.state.audio;
         let sound = null;
-        audio === true
+        audio
         ? sound = <Mute onClick={this.audioOff} className="sound"/>
         : sound = <Sound onClick={this.audioOn} className="sound"/>
         return (
