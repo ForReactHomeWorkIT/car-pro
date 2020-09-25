@@ -1,5 +1,5 @@
 import React from 'react';
-import song from "../assets/audio_bg.mp3";
+import song from "../../assets/audio_bg.mp3";
 
 const Audio = () => {
         return (

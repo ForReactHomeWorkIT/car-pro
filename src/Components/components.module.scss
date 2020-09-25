@@ -5,17 +5,23 @@
   justify-content: center;
   gap: 2em;
   padding: 2em;
+  position: fixed;
+  right: 10%;
 
   &__item {
     color:#fff;
     font-size: 24px;
     font-family:Tahoma, Geneva, sans-serif;
   }
+  &__item:hover {
+    text-decoration: underline;
+  }
 }
 
 .header {
-  margin-bottom: 30px;
-
+  margin-top: 20px;
+  display: inline-block;
+  position: fixed;
   &__logo {
     display: flex;
   }

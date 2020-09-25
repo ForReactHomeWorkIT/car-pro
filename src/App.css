@@ -22,7 +22,7 @@
     height: 10vh;
 }
 #main {
-    flex: 1 0 auto;
+    padding-top: 20%;
 }
 #footer {
     height: 5vh;
@@ -81,7 +81,7 @@ a {
 .page-enter-active {
     opacity: 1;
     transform: scale(1);
-    transition: opacity 1000ms, transform 1000ms;
+    transition: opacity 300ms, transform 300ms;
 }
 
 .page-exit {
@@ -92,7 +92,7 @@ a {
 .page-exit-active {
     opacity: 0;
     transform: scale(0.9);
-    transition: opacity 1000ms, transform 1000ms;
+    transition: opacity 300ms, transform 300ms;
 }
 p {
     color: aliceblue;

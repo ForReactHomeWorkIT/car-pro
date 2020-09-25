@@ -8,6 +8,8 @@ import About from "../Pages/About/About";
 import Price from "../Pages/Price/Price";
 import {CSSTransition} from "react-transition-group";
 import {Container, Nav, Navbar} from "react-bootstrap";
+import Click from "./SoundEffect/Click";
+import Hover from "./SoundEffect/Hover";
 
 const routes = [
     {path: '/', name: 'Main', Component: Main},
@@ -15,15 +17,23 @@ const routes = [
     {path: '/news', name: 'News', Component: News},
     {path: '/about', name: 'About', Component: About}
 ]
-
+const clickLink = () => {
+    document.getElementById('click').play()
+}
+const hoverLink = () => {
+    document.getElementById('hover').play()
+}
 export default function Navigation() {
     return (
         <Router>
             <>
+                <Hover />
+                <Click />
                 <Navbar bg="light">
                     <Nav className={components.wrap_nav} >
                         {routes.map(route => (
-                            <Nav.Link
+                            <Nav.Link onMouseEnter={() => hoverLink()}
+                                onClick={() => clickLink()}
                                 key={route.path}
                                 as={NavLink}
                                 to={route.path}
@@ -40,7 +50,7 @@ export default function Navigation() {
                             {({match}) => (
                                 <CSSTransition
                                     in={match != null}
-                                    timeout={1000}
+                                    timeout={300}
                                     classNames="page"
                                     unmountOnExit
                                 >

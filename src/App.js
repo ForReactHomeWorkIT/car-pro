@@ -3,7 +3,7 @@ import './App.css';
 import Wrapper from "./Components/Wrapper";
 import Mute from "./Components/Mute";
 import Sound from "./Components/Sound";
-import Audio from "./Components/Audio";
+import Audio from "./Components/SoundEffect/Audio";
 
 export default class App extends Component {
     constructor(props) {
