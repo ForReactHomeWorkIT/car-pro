@@ -23,17 +23,26 @@ const clickLink = () => {
 const hoverLink = () => {
     document.getElementById('hover').play()
 }
-export default function Navigation() {
+export default function Navigation(props) {
+    let hover = null
+    let click = null
+    if (!props.audio) {
+        hover = <Hover />
+        click = <Click />
+    }
     return (
         <Router>
             <>
-                <Hover />
-                <Click />
+                {hover}
+                {click}
                 <Navbar bg="light">
                     <Nav className={components.wrap_nav} >
                         {routes.map(route => (
-                            <Nav.Link onMouseEnter={() => hoverLink()}
-                                onClick={() => clickLink()}
+                            <Nav.Link
+                                onMouseEnter={
+                                    !props.audio ? () => hoverLink() : null}
+                                onClick={
+                                    !props.audio ? () => clickLink() : null}
                                 key={route.path}
                                 as={NavLink}
                                 to={route.path}

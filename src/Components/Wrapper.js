@@ -8,7 +8,7 @@ const Wrapper = props => {
         return (
             <div>
                 <Header />
-                <Navigation />
+                <Navigation audio={props.audio}/>
                 <Footer />
             </div>
         );

@@ -31,7 +31,7 @@ export default class App extends Component {
             <div className="App">
                 <Audio />
                 {sound}
-                <Wrapper />
+                <Wrapper audio={this.state.audio}/>
             </div>
         )
     }
