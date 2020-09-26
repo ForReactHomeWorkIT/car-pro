@@ -17,6 +17,7 @@
 }
 .container {
     min-height: 80vh;
+    padding: 0 20%;
 }
 #header {
     height: 10vh;
@@ -96,4 +97,9 @@ a {
 }
 p {
     color: aliceblue;
+}
+td {
+    width: 50px;
+    padding: 5px;
+
 }

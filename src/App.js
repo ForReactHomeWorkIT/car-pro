@@ -4,6 +4,7 @@ import Wrapper from "./Components/Wrapper";
 import Mute from "./Components/Mute";
 import Sound from "./Components/Sound";
 import Audio from "./Components/SoundEffect/Audio";
+import Exchange from "./Components/Exchange";
 
 export default class App extends Component {
     constructor(props) {
@@ -20,7 +21,6 @@ export default class App extends Component {
         this.setState({audio: false})
         document.getElementById('music').play()
     }
-
     render() {
         const audio = this.state.audio;
         let sound = null;
@@ -31,9 +31,9 @@ export default class App extends Component {
             <div className="App">
                 <Audio />
                 {sound}
+                <Exchange />
                 <Wrapper audio={this.state.audio}/>
             </div>
         )
     }
 }
-
