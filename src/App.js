@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import './App.css';
 import Wrapper from "./Components/Wrapper";
-import Mute from "./Components/Mute";
-import Sound from "./Components/Sound";
+import Mute from "./Components/SoundEffect/Mute";
+import Sound from "./Components/SoundEffect/Sound";
 import Audio from "./Components/SoundEffect/Audio";
 import Exchange from "./Components/Exchange";
+import Weather from "./Components/Weather";
 
 export default class App extends Component {
     constructor(props) {
@@ -32,6 +33,7 @@ export default class App extends Component {
                 <Audio />
                 {sound}
                 <Exchange />
+                <Weather />
                 <Wrapper audio={this.state.audio}/>
             </div>
         )

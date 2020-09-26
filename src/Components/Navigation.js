@@ -23,6 +23,7 @@ const clickLink = () => {
 const hoverLink = () => {
     document.getElementById('hover').play()
 }
+
 export default function Navigation(props) {
     let hover = null
     let click = null
@@ -40,9 +41,9 @@ export default function Navigation(props) {
                         {routes.map(route => (
                             <Nav.Link
                                 onMouseEnter={
-                                    !props.audio ? () => hoverLink() : null}
+                                    !props.audio ? () => hoverLink() : false}
                                 onClick={
-                                    !props.audio ? () => clickLink() : null}
+                                    !props.audio ? () => clickLink() : false}
                                 key={route.path}
                                 as={NavLink}
                                 to={route.path}
