@@ -5,7 +5,7 @@
     --head-color: #F0F9F0;
     --dark: #000;
     /*FONT*/
-
+    --font-head: calc(1em + 1vw);
 }
 
 .App {
@@ -42,7 +42,7 @@
     margin: 0;
     padding: 0;
 }
-h1 {
+h2 {
     color: var(--second-color);
 }
 ul {
@@ -55,7 +55,7 @@ a {
 }
 
 .sound {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     background-color: transparent;
@@ -99,7 +99,9 @@ p {
     color: aliceblue;
 }
 td {
-    width: 50px;
+    width: 2vw;
+    font-weight: bold;
+    font-size: 1vw;
     padding: 5px;
 
 }
@@ -108,4 +110,7 @@ td {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 0;
+}
+a.active {
+    color: var(--second-color);
 }

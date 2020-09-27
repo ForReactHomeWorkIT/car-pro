@@ -8,7 +8,7 @@ const Header = props => {
             <div id="header" className={components.header}>
                 <div className={components.header__logo}>
                     <Logo />
-                    <h1>Car-pro</h1>
+                    <h2>Car-pro</h2>
                 </div>
             </div>
         )

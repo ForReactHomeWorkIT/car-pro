@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 const styles = {
     table: {
-        position: "fixed",
+        position: "absolute",
         top: "20%",
         left: "20px",
         color: "#fff",
@@ -13,9 +13,6 @@ const styles = {
         font: "18pt Georgia",
         fontWeight: "bold",
         paddingBottom: "15px",
-    },
-    td: {
-        font: "14pt Georgia", fontWeight: "bold", width: "100px"
     }
 }
 
@@ -60,16 +57,16 @@ class Exchange extends Component {
                         Exchange Rates
                     </caption>
                     <tr>
-                        <td style={styles.td}>Currency</td>
-                        {items.map(item => <td>{item.ccy}</td>)}
+                        <td>Currency</td>
+                        {items.map(item => item.ccy === "BTC" ? false : <td>{item.ccy}</td>)}
                     </tr>
                     <tr>
-                        <td style={styles.td}>Buy</td>
-                        {items.map(item => <td>{(+item.buy).toFixed(2)}</td>)}
+                        <td>Buy</td>
+                        {items.map(item => item.ccy === "BTC" ? false : <td>{(+item.buy).toFixed(2)}</td>)}
                     </tr>
                     <tr>
-                        <td style={styles.td}>Sale</td>
-                        {items.map(item => <td>{(+item.sale).toFixed(2)}</td>)}
+                        <td>Sale</td>
+                        {items.map(item => item.ccy === "BTC" ? false : <td>{(+item.sale).toFixed(2)}</td>)}
                     </tr>
                 </table>
 

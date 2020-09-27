@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import components from './components.module.css';
-import {BrowserRouter as Router, NavLink, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, NavLink, Route} from "react-router-dom";
 import Main from "../Pages/Main/Main";
 import News from "../Pages/News/News"
 import About from "../Pages/About/About";

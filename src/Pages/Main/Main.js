@@ -1,16 +1,16 @@
 import React from 'react'
-import './Main.css'
-
-const styles = {
-    img: {
-        marginLeft: "30%"
-    }
-}
+import styles from './main.module.css'
+import img from '../../assets/head_img.png'
 
 export default function Main() {
-return (
-    <div>
-        <img style={styles.img} width={500} src="https://carhoots.com/wp-content/uploads//2019/07/66646816_492039374938472_3464683549005804454_n.jpg" alt="image"/>
-    </div>
-)
+    return (
+        <>
+            <hr/>
+            <section className={styles.main_section}>
+                <h1>CAR-PRO. <br/><span className={styles.prime}>BEST SERVICE, <br/> <span className={styles.second}>BEST LIFE...</span></span></h1>
+                <div className={styles.head_img}></div>
+            </section>
+            <hr/>
+        </>
+    )
 }
