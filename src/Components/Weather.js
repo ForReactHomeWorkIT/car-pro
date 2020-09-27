@@ -59,13 +59,13 @@ class Weather extends Component {
             return <p style={{position: "absolute", top: "20%", right: "50px"}}>Loading...</p>
         } else {
             return (
-                <div style={{position: "absolute", top: "20%", right: "50px"}}>
+                <div style={{position: "absolute", top: "20%", right: "50px",width: "15%"}}>
                     <h4 style={{color: "#fff"}}>Your location {items.location.name}</h4>
                     <div><span style={{color: "#fff"}}>Last updated: {items.current.last_updated}</span></div>
-                    <div className="flexWeather"><img src={items.current.condition.icon} alt="weather"/><span
-                        style={{color: "#fff"}}>{items.current.condition.text}</span></div>
+                    <div className="flex"><img src={items.current.condition.icon} alt="weather" width={100}/><span
+                        style={{color: "#fff", fontSize: ".8vw", width: "30%"}}>{items.current.condition.text}</span></div>
                     <div><span style={{color: "#fff"}}>Temperature {items.current.temp_c}&#8451;</span></div>
-                    <div className="flexWeather"><span style={{color: "#fff"}}>Wind {items.current.wind_dir}</span><span
+                    <div className="flex"><span style={{color: "#fff"}}>Wind {items.current.wind_dir}</span><span
                         style={{color: "#fff"}}>{items.current.wind_kph} kph</span></div>
 
                 </div>

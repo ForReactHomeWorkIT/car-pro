@@ -52,23 +52,23 @@ class Exchange extends Component {
             return <p style={styles.table}>Loading...</p>
         } else {
             return (
-                <table style={styles.table}>
-                    <caption style={styles.caption}>
+                <div style={styles.table}>
+                    <h3 style={styles.caption}>
                         Exchange Rates
-                    </caption>
-                    <tr>
-                        <td>Currency</td>
-                        {items.map(item => item.ccy === "BTC" ? false : <td>{item.ccy}</td>)}
-                    </tr>
-                    <tr>
-                        <td>Buy</td>
-                        {items.map(item => item.ccy === "BTC" ? false : <td>{(+item.buy).toFixed(2)}</td>)}
-                    </tr>
-                    <tr>
-                        <td>Sale</td>
-                        {items.map(item => item.ccy === "BTC" ? false : <td>{(+item.sale).toFixed(2)}</td>)}
-                    </tr>
-                </table>
+                    </h3>
+                    <div className="flex">
+                        <span style={{width: "4vw"}}>Currency</span>
+                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{item.ccy}</span>)}
+                    </div>
+                    <div className="flex">
+                        <span style={{width: "4vw"}}>Buy</span>
+                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{(+item.buy).toFixed(2)}</span>)}
+                    </div>
+                    <div className="flex">
+                        <span style={{width: "4vw"}}>Sale</span>
+                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{(+item.sale).toFixed(2)}</span>)}
+                    </div>
+                </div>
 
             )
         }

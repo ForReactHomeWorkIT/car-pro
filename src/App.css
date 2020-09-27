@@ -98,19 +98,26 @@ a {
 p {
     color: aliceblue;
 }
-td {
+.flex span {
     width: 2vw;
     font-weight: bold;
-    font-size: 1vw;
-    padding: 5px;
+    font-size: calc(1vw * .9);
 
 }
-.flexWeather {
+.flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 0;
 }
 a.active {
     color: var(--second-color);
+}
+.scrollItem {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 1s ease 0s;
+}
+.scrollItem._active {
+    transform: translate(0px, 0px);
+    opacity: 1;
 }

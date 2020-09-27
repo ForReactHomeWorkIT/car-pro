@@ -1,12 +1,12 @@
 .main_section {
   display: flex;
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
   h1 {
     color: yellow;
-    font-family: Gadugi;
+    font-family: Gadugi, serif;
     font-size: calc(1em + 2vw);
     font-weight: bold;
     .prime {
@@ -23,6 +23,38 @@
     width: 50%;
     height: 40vh;
     background-image: url('../../assets/head_img.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+.service_section {
+  display: flex;
+  height: 70vh;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  &__title {
+    color: yellow;
+    font-family: Gadugi, serif;
+    font-size: calc(1em + 2vw);
+    font-weight: bold;
+    text-align: center;
+    .prime {
+      color: var(--prime-color);
+    }
+    .second {
+      color: var(--second-color);
+    }
+  }
+
+  &__img {
+    max-width: 50%;
+    max-height: 40vh;
+    width: 50%;
+    height: 40vh;
+    background-image: url('https://www.selbststaendig.de/sites/default/files/artikelbilder/kfz-werkstatt.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
