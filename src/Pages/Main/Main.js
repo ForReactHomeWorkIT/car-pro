@@ -32,7 +32,7 @@ export default function Main() {
                 <div className={styles.head_img}></div>
             </div>
             <hr/>
-            <section style={{display: "flex", gap: "1em", flexDirection: "row", flexWrap: "wrap", margin: "20px 0"}}>
+            <section style={{display: "flex", gap: "4em", flexDirection: "row", flexWrap: "wrap", justifyContent: "space-between", margin: "20px 0"}}>
                 {imgArray.map(img => <img className="scrollItem" src={img} alt="gridItem" width={200} height={100}/>)}
             </section>
             <hr/>
