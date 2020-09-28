@@ -63,8 +63,7 @@ class Weather extends Component {
                     <h4 style={{color: "#fff"}}>Your location {items.location.name}</h4>
                     <div><span style={{color: "#fff"}}>Last updated: {items.current.last_updated}</span></div>
                     <div className="flex"><img src={items.current.condition.icon} alt="weather" width={100}/><span
-                        style={{color: "#fff", fontSize: ".8vw", width: "30%"}}>{items.current.condition.text}</span></div>
-                    <div><span style={{color: "#fff"}}>Temperature {items.current.temp_c}&#8451;</span></div>
+                        style={{color: "#fff", fontSize: "3vw", width: "30%"}}>{items.current.temp_c}&#8451;</span></div>
                     <div className="flex"><span style={{color: "#fff"}}>Wind {items.current.wind_dir}</span><span
                         style={{color: "#fff"}}>{items.current.wind_kph} kph</span></div>
 
