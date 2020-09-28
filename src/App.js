@@ -6,6 +6,7 @@ import Sound from "./Components/SoundEffect/Sound";
 import Audio from "./Components/SoundEffect/Audio";
 import Exchange from "./Components/Exchange";
 import Weather from "./Components/Weather";
+import SocialNet from "./Components/Logo/SocialNet";
 
 
 const animItems = document.getElementsByClassName('scrollItem')
@@ -33,8 +34,6 @@ function animOnScroll() {
 
             if ((window.pageYOffset > animItemOffset - animItemPoint) && window.pageYOffset < (animItemOffset + animItemHeight)) {
                 animItem.classList.add('_active')
-            } else {
-                animItem.classList.remove('_active')
             }
         }
     }
@@ -72,6 +71,7 @@ export default class App extends Component {
                 {sound}
                 <Exchange/>
                 <Weather/>
+                <SocialNet audio={this.state.audio}/>
                 <Wrapper audio={this.state.audio}/>
             </div>
         )

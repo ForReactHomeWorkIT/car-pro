@@ -36,3 +36,17 @@
   width: 100vw;
   height: 100vh;
 }
+
+.social_box {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  svg {
+    transform: scale(.7);
+  }
+   svg:hover {
+     fill: var(--second-color);
+   }
+}

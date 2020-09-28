@@ -4,14 +4,17 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
   h1 {
     color: yellow;
     font-family: Gadugi, serif;
     font-size: calc(1em + 2vw);
     font-weight: bold;
+
     .prime {
       color: var(--prime-color);
     }
+
     .second {
       color: var(--second-color);
     }
@@ -29,21 +32,25 @@
   }
 
 }
+
 .service_section {
   display: flex;
   height: 70vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
+
   &__title {
     color: yellow;
     font-family: Gadugi, serif;
     font-size: calc(1em + 2vw);
     font-weight: bold;
     text-align: center;
+
     .prime {
       color: var(--prime-color);
     }
+
     .second {
       color: var(--second-color);
     }
@@ -60,4 +67,13 @@
     background-size: contain;
   }
 
+}
+
+.img_section {
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
 }

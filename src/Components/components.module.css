@@ -30,4 +30,15 @@
   width: 100vw;
   height: 100vh; }
 
+.social_box {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  display: flex;
+  flex-direction: column; }
+  .social_box svg {
+    transform: scale(0.7); }
+  .social_box svg:hover {
+    fill: var(--second-color); }
+
 /*# sourceMappingURL=components.module.css.map */

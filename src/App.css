@@ -28,12 +28,12 @@
 #footer {
     height: 5vh;
     background-color: transparent;
-    border-top: 2px solid orangered;
+    border-top: 2px solid #fff;
     flex: 0 0 auto;
 }
 
 .main-footer h4{
-    color: orangered;
+    color: #fff;
     text-align: center;
 }
 
