@@ -10,13 +10,12 @@ const hoverLink = () => {
 }
 
 const SocialNet = props => {
-    console.log(props)
     return (
         <div className={styles.social_box}>
             <a onMouseEnter={
-                !props.audio ? () => hoverLink() : false}
+                !props.audio ? () => hoverLink() : () => false}
                onClick={
-                   !props.audio ? () => clickLink() : false}
+                   !props.audio ? () => clickLink() : () => false}
                target="_blank" href="https://github.com">
                 <svg width={50} height={50} fill="#fff">
                     <path
@@ -24,9 +23,9 @@ const SocialNet = props => {
                 </svg>
             </a>
             <a onMouseEnter={
-                !props.audio ? () => hoverLink() : false}
+                !props.audio ? () => hoverLink() : () => false}
                onClick={
-                   !props.audio ? () => clickLink() : false}
+                   !props.audio ? () => clickLink() : () => false}
                target="_blank" href="https://instagram.com">
                 <svg width={50} height={50} fill="#fff">
                     <path
@@ -34,9 +33,9 @@ const SocialNet = props => {
                 </svg>
             </a>
             <a onMouseEnter={
-                !props.audio ? () => hoverLink() : false}
+                !props.audio ? () => hoverLink() : () => false}
                onClick={
-                   !props.audio ? () => clickLink() : false}
+                   !props.audio ? () => clickLink() : () => false}
                target="_blank" href="https://youtube.com">
                 <svg width={50} height={50} fill="#fff">
                     <path
@@ -44,9 +43,9 @@ const SocialNet = props => {
                 </svg>
             </a>
             <a onMouseEnter={
-                !props.audio ? () => hoverLink() : false}
+                !props.audio ? () => hoverLink() : () => false}
                onClick={
-                   !props.audio ? () => clickLink() : false}
+                   !props.audio ? () => clickLink() : () => false}
                target="_blank" href="https://facebook.com">
                 <svg width={50} height={50} fill="#fff">
                     <path
