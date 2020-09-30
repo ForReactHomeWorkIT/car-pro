@@ -12,10 +12,10 @@ import Click from "./SoundEffect/Click";
 import Hover from "./SoundEffect/Hover";
 
 const routes = [
-    {path: '/', name: 'Main', Component: Main},
-    {path: '/price', name: 'Price', Component: Price},
-    {path: '/news', name: 'News', Component: News},
-    {path: '/about', name: 'About', Component: About}
+    {path: '/', name: 'Main', Component: Main, index: 1},
+    {path: '/price', name: 'Price', Component: Price, index: 2},
+    {path: '/news', name: 'News', Component: News, index: 3},
+    {path: '/about', name: 'About', Component: About, index: 4}
 ]
 const clickLink = () => {
     document.getElementById('click').play()
@@ -38,13 +38,13 @@ export default function Navigation(props) {
                 {click}
                 <Navbar bg="light">
                     <Nav className={components.wrap_nav} >
-                        {routes.map(route => (
+                        {routes.map((route) => (
                             <Nav.Link
                                 onMouseEnter={
                                     !props.audio ? () => hoverLink() : () => false}
                                 onClick={
                                     !props.audio ? () => clickLink() : ()=> false}
-                                key={route.path}
+                                key={route.index}
                                 as={NavLink}
                                 to={route.path}
                                 activeClassName="active"
@@ -55,8 +55,8 @@ export default function Navigation(props) {
                     </Nav>
                 </Navbar>
                 <Container className="container">
-                    {routes.map(({path, Component}) => (
-                        <Route exact path={path}>
+                    {routes.map(({path, Component, index}) => (
+                        <Route key={index} exact path={path}>
                             {({match}) => (
                                 <CSSTransition
                                     in={match != null}

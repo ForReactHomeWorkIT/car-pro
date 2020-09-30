@@ -45,8 +45,9 @@
   flex-direction: column;
   svg {
     transform: scale(.7);
+    filter: grayscale(100%);
   }
    svg:hover {
-     fill: var(--second-color);
+     filter: brightness(100%);
    }
 }

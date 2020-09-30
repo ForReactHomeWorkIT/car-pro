@@ -3,22 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {Provider} from "react-redux";
-import createStore from "./store";
-
-const store =createStore()
-setTimeout(function () {
-    store.dispatch({
-        type: 'qwer'
-    })
-}, 3000)
 
 ReactDOM.render(
   <React.StrictMode>
-      <Provider store={store}>
           <App />
-      </Provider>
-
   </React.StrictMode>,
   document.getElementById('root')
 );

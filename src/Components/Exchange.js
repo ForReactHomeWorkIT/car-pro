@@ -58,15 +58,15 @@ class Exchange extends Component {
                     </h3>
                     <div className="flex">
                         <span style={{width: "4vw"}}>Currency</span>
-                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{item.ccy}</span>)}
+                        {items.map((item, i) => item.ccy === "BTC" ? false : <span key={i} style={{width: "3vw"}}>{item.ccy}</span>)}
                     </div>
                     <div className="flex">
                         <span style={{width: "4vw"}}>Buy</span>
-                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{(+item.buy).toFixed(2)}</span>)}
+                        {items.map((item, i) => item.ccy === "BTC" ? false : <span key={i} style={{width: "3vw"}}>{(+item.buy).toFixed(2)}</span>)}
                     </div>
                     <div className="flex">
                         <span style={{width: "4vw"}}>Sale</span>
-                        {items.map(item => item.ccy === "BTC" ? false : <span style={{width: "3vw"}}>{(+item.sale).toFixed(2)}</span>)}
+                        {items.map((item, i) => item.ccy === "BTC" ? false : <span key={i} style={{width: "3vw"}}>{(+item.sale).toFixed(2)}</span>)}
                     </div>
                 </div>
 

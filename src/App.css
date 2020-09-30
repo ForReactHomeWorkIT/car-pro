@@ -115,7 +115,7 @@ a.active {
 .scrollItem {
     transform: translate(0px, 120%);
     opacity: 0;
-    transition: all 1s ease 0s;
+    transition: all 1.5s ease 0s;
 }
 .scrollItem._active {
     transform: translate(0px, 0px);
